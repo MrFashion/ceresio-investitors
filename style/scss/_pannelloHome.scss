@@ -1,0 +1,224 @@
+a.pannello-home-wrapper, .pannello-home-wrapper {
+       -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+    display:block;
+    padding-top: 15px; padding-bottom: 15px;
+    p{
+        color:$dark_color;
+    }
+    
+    &:hover, &:focus{
+        p{
+            color:$dark_color;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        padding: 15px 15px 15px 15px;
+    }
+}
+
+.pannello-home-claim {
+  padding: 0 0 0 0;
+  hr {
+    border-bottom-color:$primary_color;
+    margin-bottom: 15px;
+  }
+  ul {
+    padding: 0;
+    font-family: $font_text;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 12px;
+    list-style-type: none;
+  }
+
+    h2, .h2{
+        font-size:1.3rem; line-height:1.3;
+        margin-bottom:25px;
+
+        @media only screen and (min-width: 768px) {
+            font-size:2rem; line-height: 1.2;
+        }
+    }
+}
+
+.pannello-home {
+  background-color: white;
+  padding: 24px;
+    transition:box-shadow .3s ease-in-out;
+
+  h6 {
+    color: $primary_color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .pannello-home-content {
+    p {
+      margin-bottom: 80px;
+      font-size: 1rem; text-transform: none; letter-spacing: 0;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .slider-nav-home {
+    margin-top: 60px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding-top: 40px;
+      margin: 0 auto;
+      width: 100%;
+    }
+      
+      .slider-nav {
+          display:inline-block; float:none;
+          width:24px; height:24px;
+          margin-left:9px; margin-right:9px;
+          
+          @media only screen and (min-width: 768px) {
+              margin-left:0; margin-right:18px;
+          }
+          
+          span {
+              position:relative;
+              display:block; float:left;
+              width:24px; height:24px;
+              padding:6px;
+              font-size:12px; line-height:10px; text-align:center;
+              border-radius:50%;
+              transition: .2s ease-in-out;
+    
+              &:after {
+                  content:'';
+                  position:absolute; left:0; top:0;
+                  width:24px; height:24px;
+                  border:1px solid $primary_color;
+                  border-radius:50%;
+              }
+          }
+          &:hover {
+              span {
+                  color:$light_color;
+                  background-color:$primary_color;
+              }
+          }
+          
+          &.active {
+              span {
+                  color:$light_color;
+                  background-color:$primary_color;
+              }
+          }
+      }
+
+    span{
+      font-weight: 400;
+      a:hover, a:active, a:focus {
+        color: $light_color;
+      }
+    }
+
+    .slider-nav:hover,.slider-nav:focus{
+      color: $light_color;
+    }
+
+    .slider-nav:hover, .slider-nav:focus, .slider-nav:active {
+      .circle {
+        background: $primary_color;
+      }
+
+
+    }
+  }
+}
+
+.pannello-home:hover {
+  box-shadow: 1px 1px 8px rgba(74, 74, 74, 0.2);
+  cursor: pointer;
+  a.more {
+    color: $secondary_color;
+  }
+}
+
+.pannello-home-img-wrapper {
+  height: 60%;
+  overflow: hidden;
+    a {
+        display:block; float:left;
+        width:100%;
+        
+      .pannello-home-img {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .container-order {
+    display: flex;
+    flex-flow: column;
+  }
+  .five {
+    order: 5;
+  }
+  .four {
+    order: 4;
+  }
+  .three {
+    order: 3;
+  }
+  .two {
+    order: 2;
+  }
+  .one {
+    order: 1
+  }
+}
+
+
+
+
+
+.row.d-flex {
+    height: 100vw;
+    max-height: calc(100vh * 2);
+}
+
+@media (min-width: 600px) {
+    .pb-3 {
+        flex: initial;
+        display: block;
+        
+    }
+}
+
+@media (min-width: 600px) and (max-width: 730px) {
+    .row.d-flex {
+        max-height: 1200px;
+        height: 1200px;
+    }
+}
+
+
+@media (min-width: 731px) and (max-width: 1200px) {
+    .row.d-flex {
+        max-height: 1200px;
+    }
+}
+
+
+.grid-item{
+    -webkit-transition:none; /* Safari */
+    transition:none;
+}

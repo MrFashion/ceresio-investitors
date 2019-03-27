@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?km9gbm');
+  src: url('../fonts/icomoon.eot?km9gbm#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?km9gbm') format('truetype'),
+  url('../fonts/icomoon.woff?km9gbm') format('woff'),
+  url('../fonts/icomoon.svg?km9gbm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 15px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+
+.icon-arrow-right:before {
+  content: "\e901";
+
+
+}
+
+.icon-ceresio-logotype:before {
+  content: "\e902";
+  font-size: 200px;
+}
+
+.icon-ceresio-mark:before {
+  content: "\e903";
+  font-size: 50px;
+  opacity: 0.5;
+
+}
+
+.icon-close:before {
+  content: "\e904";
+}
+
+.icon-download:before {
+  content: "\e905";
+}
+
+.icon-locked:before {
+  content: "\e906";
+}
+
+.icon-menu:before {
+  content: "\e907";
+}
+
+.icon-minus:before {
+  content: "\e908";
+  border: 1.2px solid;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.icon-plus:before {
+  content: "\e909";
+  border: 1.2px solid;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px ;
+  margin:  10px 0 10px 0 ;
+
+}
+
+.circle {
+  border: 1.15px solid $primary_color;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; height: 1.6em;
+}
+
+
+.circle:active,.circle:hover,circle:focus {
+  background: $primary_color;
+}

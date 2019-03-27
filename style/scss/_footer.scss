@@ -1,0 +1,207 @@
+//main: main.scss
+footer {
+  font-size: 14px;
+  font-family: $font_text;
+  bottom: 0;
+  width: 100%;
+  color: $light_color;
+
+  .row {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+      
+      &.footer-address {
+          .row {
+              margin-top:0!important; margin-bottom:0!important;
+          }
+          
+          .footer-address-content {
+              display:none;
+              margin-bottom:10px;
+              
+              @media only screen and (min-width: 768px) {
+                  display:block!important;
+                  height:auto!important;
+                  margin-bottom:0px!important;
+              }
+              .row {
+                  > div {
+                      margin-top:20px;
+                      
+                      @media only screen and (min-width: 768px) {
+                          margin-top:0;
+                      }
+                  }
+              }
+          }
+          
+          > div {
+              > p {
+                  position:relative;
+                  padding-right:50px;
+                  cursor:pointer;
+                  
+                  &:after {
+                      content: "\e909";
+                      position:absolute; right:0; top:50%;
+                      width:32px; height:32px;
+                      padding:8px;
+                      border:1px solid $white;
+                      border-radius: 50%;
+                      font-size:14px; line-height:14px; font-family: 'icomoon' !important;
+                      transform:translateY(-50%);
+                  }
+                  
+                  @media only screen and (min-width: 768px) {
+                      padding-right:0;
+                      cursor:inherit;
+                      
+                      &:after {
+                          content:none;
+                      }
+                  }
+              }
+              
+              &.open {
+                  > p {
+                      &:after {
+                          content: "\e908";
+                  
+                          @media only screen and (min-width: 768px) {
+                              content:none;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  a {
+    color: $light_color;
+    text-transform: none;
+  }
+
+  .row-contact-title {
+    margin-top: 10px;
+  }
+
+  #logo-footer {
+    height: 70px;
+    width: 15%;
+    float: left;
+  }
+  #logo-footer-content {
+    float: right;
+    width: 70%;
+      
+      a {
+          margin-bottom:2px;
+      }
+  }
+
+  #contactsFooter {
+    a {
+      font-size: 14px;
+    }
+    p {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    .accordion {
+      p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .row {
+        margin-bottom: 15px;
+      }
+      a {
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      hr {
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+      }
+    }
+      
+      .row-contact-title {
+          .titleNav {
+              margin-bottom:10px;
+          }
+      }
+  }
+
+  #footer-nav {
+    margin-top: 20px;
+    font-size: 14px;
+    a {
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      line-height: 25px;
+    }
+
+    h3 {
+      padding-bottom: 10px;
+    }
+
+    .col-last {
+      right: 15px;
+      position: absolute;
+    }
+
+    .titleNav {
+      letter-spacing: 1px;
+    }
+  }
+
+  .footer-copyright {
+    p {
+        margin-top:4px;
+        font-size: 14px;
+    }
+
+    .row {
+      margin-top: 0;
+    }
+    #footerLinks {
+      letter-spacing: 0;
+      float: right;
+
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top:45px;
+        
+      p,p#footerLinks {
+        font-size: 14px;
+      }
+    }
+  }
+
+  hr.show-on-mobile {
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .contact {
+    margin-bottom: 40px;
+  }
+
+}

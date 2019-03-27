@@ -1,0 +1,121 @@
+//main: main.scss
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $primary_color;
+  overflow-y: auto;
+  z-index: 1;
+  margin-top: -50px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: -50px;
+  }
+
+
+  .container-overlay-nav{
+    margin-top: 90px;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+      
+      .container-nav {
+          margin-top:20px;
+      }
+  }
+
+  .navbar-brand {
+    color: $light_color;
+  }
+
+  .title-list {
+    font-weight: bold;
+    color: $secondary_color;
+  }
+
+  .nav-overlay {
+    background-color: $primary_color;
+
+
+  }
+
+  a {
+    color: $light_color;
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  a:hover, a:focus {
+    color: $secondary_color;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .titleNav {
+    h3 {
+      margin-bottom: 20px;
+      width: 100%;
+      font-weight: 500;
+    }
+  }
+
+  #lang-ita, #lang-eng {
+    text-transform: none;
+    padding-left: 40px ;
+  }
+
+  .overlay-nav-links {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+    }
+    li {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+  }
+
+  hr.show-on-mobile {
+    opacity: 0.5;
+    margin-top: 20px;
+  }
+
+  #close-nav{
+    padding-left: 20px;
+  }
+
+}
+
+.plus-mobile-nav {
+  right: 0;
+  position: absolute;
+  color: white;
+  padding-bottom: 10px
+}
+
+@media only screen and (min-width: 768px) {
+  .plus-mobile-nav {
+    display: none;
+  }
+
+}
+
+.mobile-lang {
+    margin-top:60px;
+    text-align:center;
+    
+    a {
+        &.active {
+            color: $secondary_color;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+//main: main.scss
+
+body {
+  color: $dark_color;
+  font-family: $font_text;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+}
+
+h1, h2, h5 {
+  font-family: $font_title;
+  color: $primary_color;
+
+}
+
+h3 {
+  font-family: $font_text;
+  color: $secondary_color;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+h4 {
+  color: $primary_color;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
+a {
+  color: $primary_color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+a:hover, a:focus, a:hover {
+  color: $secondary_color;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.5px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.claim {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-left: 0;
+    
+    h2, .h2{
+        font-size:1.3rem; line-height:1.3;
+        
+        @media only screen and (min-width: 768px) {
+            font-size:2rem; line-height: 1.2;
+        }
+    }
+
+  h4 {
+    padding-bottom: 40px;
+    font-weight: 500;
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.more {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  .icon-arrow-right {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+.test {
+  border: 2px solid red;
+}
+
+.show-on-mobile {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+//desktop show
+@media only screen and (min-width: 768px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+//mobile show
+@media screen and (max-width: 767px) {
+  #lang-ita, #lang-eng {
+    display: none;
+  }
+
+  #footer-nav {
+    display: none;
+  }
+}
+
+.slider-nav {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a.slider-nav:hover {
+  color: $light_color;
+}
+
+
+img {
+    max-width:100%; height:auto;
+}
