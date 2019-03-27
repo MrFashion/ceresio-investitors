@@ -7,30 +7,58 @@
     padding-top: 0px;
     padding-bottom: 30px;
   }
-    
-    &.prefooter {
-        padding-bottom:80px;
-        
-        @media only screen and (max-width: 768px) {
-            padding-bottom:10px;
-        }
+
+  &.prefooter {
+    padding-bottom: 80px;
+
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 10px;
     }
+  }
+}
+
+.bg-custom-light-standard {
+  background-color: $light_color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+
+  &.prefooter {
+    padding-bottom: 40px;
+
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 5px;
+    }
+  }
+
+  hr{
+    background-color: $primary_color;
+  }
 }
 
 
-.bg-nav-overlay,.bg-nav{
+.bg-custom-light-top {
+  background-color: $light_color;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+}
+
+.bg-nav-overlay, .bg-nav {
   margin-bottom: -50px;
   margin-top: -50px;
   @media only screen and (max-width: 768px) {
-    margin-bottom:-80px;
+    margin-bottom: -80px;
   }
 }
 
 .bg-nav {
   background-color: $light_color;
 }
-
-
 
 .bg-footer {
   background-color: $primary_color;

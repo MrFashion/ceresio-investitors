@@ -1,6 +1,7 @@
 //main: main.scss
 
 body {
+  background-color: $light_color;
   color: $dark_color;
   font-family: $font_text;
   font-style: normal;
@@ -109,9 +110,6 @@ hr {
     }
 }
 
-.test {
-  border: 2px solid red;
-}
 
 .show-on-mobile {
   margin-top: 20px;

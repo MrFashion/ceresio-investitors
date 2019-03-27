@@ -1,0 +1,93 @@
+//main: main.scss
+.test {
+  border: 1px solid red
+}
+
+.standard-page-title {
+  padding-left: 0px;
+
+}
+
+.standard-page-wrapper {
+  margin-top: 20px;
+
+  h4{
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+.standard-page-content {
+  .row {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 15px;
+      padding-bottom: 0px;
+    }
+  }
+
+
+
+
+  .stat-title {
+    padding-top: 50px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 20px;
+    }
+  }
+
+ .standard-page-inner-content{
+   padding-top: 10px;
+   padding-bottom: 200px;
+   @media screen and (max-width: 767px) {
+
+     padding-bottom: 50px;
+   }
+ }
+
+  h4 {
+    font-size: 12px;
+    span {
+      position: relative;
+      width: 28px;
+      height: 28px;
+      padding: 5px 6px 6px 12px;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      transition: .2s ease-in-out;
+      margin-right: 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $primary_color;
+        border-radius: 50%;
+      }
+    }
+
+
+  }
+
+  .col-md-8 {
+    p {
+      color: $primary_color;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+  }
+}
+

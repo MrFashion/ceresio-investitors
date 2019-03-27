@@ -1,6 +1,4 @@
-
 @import "variables";
-
 //========== BOOTSTRAP =================
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -39,12 +37,9 @@
 //@import "bootstrap/spinners";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
-
 //=====================================
-
 @import "slick/slick";
 @import "slick/slick-theme";
-
 
 @import "base";
 @import "typography";
@@ -55,3 +50,6 @@
 @import "accordion";
 @import "iconsPack";
 @import "pannelloHome";
+@import "standardPage";
+
+
