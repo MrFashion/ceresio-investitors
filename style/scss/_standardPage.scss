@@ -11,7 +11,7 @@
 .standard-page-wrapper {
   margin-top: 20px;
 
-  h4{
+  h4 {
     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
     }
@@ -28,41 +28,18 @@
       padding-top: 15px;
       padding-bottom: 0px;
     }
-  }
 
-
-
-
-  .stat-title {
-    padding-top: 50px;
-
-    @media screen and (max-width: 767px) {
-      padding-top: 20px;
-    }
-  }
-
- .standard-page-inner-content{
-   padding-top: 10px;
-   padding-bottom: 200px;
-   @media screen and (max-width: 767px) {
-
-     padding-bottom: 50px;
-   }
- }
-
-  h4 {
-    font-size: 12px;
-    span {
-      position: relative;
+    .rounded-number {
+      position: absolute;
       width: 28px;
       height: 28px;
-      padding: 5px 6px 6px 12px;
+      padding: 1px 12px 12px 6px;
       font-size: 14px;
       line-height: 30px;
       text-align: center;
       border-radius: 50%;
       transition: .2s ease-in-out;
-      margin-right: 20px;
+      margin-right: 42px;
 
       &:after {
         content: '';
@@ -75,9 +52,33 @@
         border-radius: 50%;
       }
     }
-
-
   }
+
+  .stat-title {
+    padding-top: 50px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 20px;
+    }
+  }
+
+  .standard-page-inner-content {
+    padding-top: 10px;
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 50px;
+    }
+  }
+
+
+
+  h4 {
+    font-size: 12px;
+    position: relative;
+    margin-left: 50px;
+  }
+
 
   .col-md-8 {
     p {
