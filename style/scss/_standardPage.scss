@@ -3,6 +3,16 @@
   border: 1px solid red
 }
 
+.stat-title {
+  padding-top: 50px;
+  margin-left: 0px;
+
+  @media screen and (max-width: 767px) {
+   padding-top: 20px;
+  }
+}
+
+
 .standard-page-title {
   padding-left: 0px;
 
@@ -60,25 +70,12 @@
 
     .title-number {
       display: inline-block;
-      margin-left: 20px;
+      margin-left:15px;
+      padding-bottom:15px;
 
-      @media screen and (max-width: 769px) {
+      @media (min-width: 731px) and (max-width: 1200px) {
         margin-top: 10px;
         margin-left: 0px;
-      }
-
-      @media screen and (max-width: 600px) {
-        margin-left: 20px;
-      }
-
-    }
-
-    .stat-title {
-      padding-top: 50px;
-      margin-left: 0px;
-
-      @media screen and (max-width: 767px) {
-        padding-top: 20px;
       }
     }
 
@@ -100,8 +97,6 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
     }
-
   }
-
 }
 
