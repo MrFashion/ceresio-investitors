@@ -3,9 +3,15 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+
+
   @media only screen and (max-width: 768px) {
     padding-top: 0px;
     padding-bottom: 30px;
+  }
+
+  &.bg-routing{
+    padding-bottom: 5px;
   }
 
   &.prefooter {
@@ -22,13 +28,23 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  &.bg-white{
+    background-color: #ffffff;
+    padding-bottom: 60px;
+  }
+
+  &.bg-light-grey{
+    background-color: $light_grey_color;
+    padding-bottom: 60px;
+  }
+
   @media only screen and (max-width: 768px) {
     padding-top: 0px;
     padding-bottom: 15px;
   }
 
   &.prefooter {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 
     @media only screen and (max-width: 768px) {
       padding-bottom: 5px;

@@ -45,6 +45,15 @@
   padding-left: 80px;
   padding-right: auto;
   text-transform: uppercase;
+
+  .active{
+    position: absolute;
+    background-color:$primary_color;
+    height: 10px;
+    width: 108px;
+    top: 50px;
+  }
+
   .nav-link {
     letter-spacing: 1px;
     font-size: 0.8rem;
