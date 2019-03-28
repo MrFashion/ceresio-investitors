@@ -117,6 +117,11 @@ hr {
   margin-bottom: 20px;
 }
 
+.mail-link{
+  text-transform: none;
+  font-weight: 600;
+}
+
 //desktop show
 @media only screen and (min-width: 768px) {
   .show-on-mobile {
@@ -150,6 +155,8 @@ a.slider-nav:hover {
 
 .pb-80 {
   padding-bottom: 80px;
+}.pb-60 {
+  padding-bottom: 60px;
 }
 
 .mt-40 {
@@ -160,9 +167,13 @@ a.slider-nav:hover {
   margin-bottom: 20px;
 }
 
+
+
 .mb-40 {
   margin-bottom: 40px;
-}.mb-60 {
+}
+
+.mb-60 {
   margin-bottom: 60px;
 }
 
