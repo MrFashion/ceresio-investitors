@@ -116,11 +116,16 @@ h4.stat-title {
       margin-top: 20px;
       margin-bottom: 20px;
 
+      @media screen and (max-width: 767px) {
+        margin-top: 12px;
+        margin-bottom: 15px;
+      }
+
       .col-9 {
         line-height: 10px;
-        @media screen and (max-width: 767px) {
-          line-height: 20px;
-
+        @media screen and (max-width: 990px) {
+          line-height: 25px;
+          font-size: 16px;
         }
       }
     }
@@ -130,12 +135,16 @@ h4.stat-title {
 
       &.single-line {
         @media screen and (max-width: 767px) {
-          margin-bottom: 12px;
+          margin-bottom: 18px;
         }
       }
 
+      @media screen and (max-width: 768px) {
+        margin-top: 15px;
+      }
+
       @media screen and (max-width: 767px) {
-        margin-top: 12px;
+        margin-top: 20px;
       }
     }
 
@@ -212,6 +221,7 @@ h4.stat-title {
       }
 
       .standard-page-inner-content {
+
         padding-top: 10px;
         padding-bottom: 200px;
 
@@ -306,6 +316,7 @@ h4.stat-title {
 }
 
 #wealth-management {
+
   .bg-custom-light {
     padding-bottom: 15px;
   }
@@ -324,6 +335,21 @@ h4.stat-title {
     &.standard-page-wrapper {
       @media screen and (max-width: 767px) {
         margin-top: 0px;
+
+        .title-section {
+          h4 {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+
+      .standard-page-content {
+
+        hr {
+          margin-top: 5px;
+        }
       }
     }
   }

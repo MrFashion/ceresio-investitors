@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Società Ceresio Bank</title>
+</head>
+<body id="sc-bank">
+
+<div class="bg-nav">
+    <header>
+        <nav id="#desktop_menu"
+             class="container navbar navbar-expand-lg">
+
+            <div class="navbar-brand">
+                <div><img src="img/logo-ceresio-investors.svg" alt="Ceresio Investors"/></div>
+            </div>
+
+            <a class="navbar-toggler " data-toggle="collapse" aria-expanded="false"
+               aria-label="Toggle navigation" href="" onclick="openNav()">
+                <span class="icon-menu"></span>
+            </a>
+
+            <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-item-custom">
+                        <div class=""></div>
+                        <a class="nav-link" href="#">WEALTH <br>MANAGEMENT</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <div class=""></div>
+                        <a class="nav-link" href="#">ASSET <br>MANAGEMENT</a>
+                    </li>
+                    <li class="nav-item nav-item-custom">
+                        <div class=" "></div>
+                        <a class="nav-link" href="#">CORPORATE <br>ADVISORY</a>
+                    </li>
+                    <li class="nav-item nav-item-custom menu-desktop">
+                        <a class="nav-link" href="#" onclick="openNav()">
+                            <span class="icon-menu"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- overlay menu -->
+
+        <div id="myNav" class="overlay">
+            <nav class="container navbar navbar-expand-lg nav-overlay  ">
+                <div class="navbar-brand">
+                    <div><img src="img/logo-ceresio-investors-white.svg" alt="Ceresio Investors"/></div>
+                </div>
+                <ul class="navbar-nav ml-auto lang-nav">
+                    <li id="lang-ita" class="nav-item nav-item-custom lang">
+                        <a class="nav-link" href="#">Italiano</a>
+                    </li>
+                    <li id="lang-eng" class="nav-item nav-item-custom">
+                        <a class="nav-link " href="#">English</a>
+                    </li>
+                    <li id="close-nav" class="nav-item nav-item-custom">
+                        <a class="nav-link" href="#" onclick="closeNav()">
+                            <span class="icon-close"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="bg-nav-overlay">
+                <div class="container container-overlay-nav">
+                    <div class="accordion container-nav " id="accordionNav" aria-disabled="true">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <hr class="show-on-mobile">
+                                <div class="card">
+                                    <div class="" id="titleNav_1">
+                                        <a class=" collapsed ui-state-disabled titleNav"
+                                           data-toggle="collapse" role="button"
+                                           data-target="#contentNav_1"
+                                           aria-controls="contentNav_1">
+                                            <h3 class="mb-0">
+                                                CHI SIAMO
+                                                <span class="icon-plus plus-mobile-nav"></span>
+                                            </h3>
+                                        </a>
+                                    </div>
+                                    <div id="contentNav_1" class="content-nav collapse show "
+                                         aria-labelledby="titleNav_1"
+                                         data-parent="#accordionNav">
+                                        <div class="overlay-nav-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Il Gruppo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">100 anni di storia</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Valori e filosofia di investimento</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fondazione</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="show-on-mobile">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="" id="titleNav_2">
+                                        <a class="collapsed ui-state-disabled titleNav"
+                                           data-toggle="collapse"
+                                           data-target="#contentNav_2"
+                                           aria-expanded="false" aria-controls="contentNav_2" href="">
+                                            <h3 class="mb-0">
+                                                SOCIET&#192;
+                                                <span class="icon-plus plus-mobile-nav"></span>
+                                            </h3>
+                                        </a>
+                                    </div>
+                                    <div id="contentNav_2" class="content-nav collapse show"
+                                         aria-labelledby="titleNav_2"
+                                         data-parent="#accordionNav">
+                                        <div class="overlay-nav-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Banca del ceresio SA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Ceresio SIM SpA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Global Selection SGR SpA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Eurofinleading Fiduciaria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">elgrave Capital Management</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="show-on-mobile">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="" id="titleNav_3">
+                                        <a class="collapsed ui-state-disabled titleNav" data-toggle="collapse"
+                                           data-target="#contentNav_3" href="" aria-expanded="false"
+                                           aria-controls="contentNav_3">
+                                            <h3 class="mb-0">ATTIVIT&#192; <span
+                                                    class="icon-plus plus-mobile-nav"></span></h3>
+                                        </a>
+                                    </div>
+                                    <div id="contentNav_3" class="content-nav collapse show"
+                                         aria-labelledby="titleNav_3"
+                                         data-parent="#accordionNav">
+                                        <div class="overlay-nav-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wealth Management</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Asset Management</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Corporate Advisory</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="show-on-mobile">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="" id="titleNav_4">
+                                        <a class="  collapsed ui-state-disabled titleNav"
+                                           data-toggle="collapse"
+                                           data-target="#contentNav_4" href=""
+                                           aria-expanded="false" aria-controls="contentNav_4">
+                                            <h3 class="mb-0">
+                                                SPUNTI DI RIFLESSIONE
+                                                <span class="icon-plus plus-mobile-nav"></span>
+                                            </h3>
+                                        </a>
+                                    </div>
+                                    <div id="contentNav_4" class=" content-nav collapse show"
+                                         aria-labelledby="titleNav_4"
+                                         data-parent="#accordionNav">
+                                        <div class="overlay-nav-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Ricerca</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Dicono di noi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="show-on-mobile">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-on-mobile row mobile-lang">
+                        <div class="col-6"><a href="#" class="active">Italiano</a></div>
+                        <div class="col-6"><a href="#">English</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end overlay menu -->
+    </header>
+</div>
+
+<section class="bg-custom-light bg-routing">
+    <div class="mt-50 show-on-mobile"></div>
+    <div class="container">
+        <div class="routing-standard-page">
+            <h4><a href="#">chi shiamo</a> / <a href="#">il gruppo</a>/<a href="#">banca del ceresio sa</a></h4>
+            <div class="row">
+                <div class="col-md-8">
+
+                    <h6>Scambio Automatico di Informazioni (SAI)</h6>
+                    <hr class="show-on-mobile">
+                </div>
+                <div class="col-md-4 ">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-custom-light-standard prefooter">
+    <div class="container ">
+        <hr>
+        <article class="row standard-page-wrapper ">
+            <div class="col-md-8">
+                <div class="standard-page-content section-details">
+                    <h1>1. Che cosa è il SAI</h1>
+                    <p>Per SAI si intende uno standard nel settore tributario introdotto a livello globale,
+                        che definisce in che modo i paesi partecipanti si scambiano reciprocamente
+                        informazioni sui conti bancari e i depositi esteri dei contribuenti. Lo standard SAI
+                        è stato sviluppato e rilasciato dall'Organizzazione per la cooperazione e lo
+                        sviluppo economico (OCSE). Circa 100 paesi si sono già impegnati per la sua
+                        attuazione.</p>
+
+                    <p>Anche la Svizzera ha aderito a questo standard internazionale ed ha emanato
+                        la Legge federale sullo scambio automatico internazionale di informazioni ai
+                        fini fiscali (LSAI).</p>
+
+                    <p>Le disposizioni prevedono che gli istituti finanziari (p. es. le banche) nei paesi
+                        partecipanti identifichino tutti i clienti (incl. i soggetti controllanti di determinate
+                        società) che risiedono in un altro paese partecipante. Laddove viene
+                        identificata una persona soggetta all'obbligo di notifica, l'istituto finanziario
+                        notificherà annualmente le informazioni rilevanti alle autorità fiscali locali, le
+                        quali a loro volta trasmetteranno questi dati alle autorità fiscali nel paese di
+                        residenza della persona soggetta a obbligo di notifica.</p>
+
+                    <h6>2. Informazioni e documentazione</h6>
+
+                    <a href="#" class="more">DIPARTIMENTO FEDERALE DELLE FINANZE <span class="icon-arrow-right"></span></a>
+                    <h6>3. Accordi sottoscritti dalla Svizzera</h6>
+                    <a href="#" class="more">SEGRETERIA DI STATO PER LE QUESTIONI FINANZIARIE INTERNAZIONALI <span class="icon-arrow-right"></span></a>
+
+
+                </div>
+                <div class="pb-10 show-on-desktop"></div>
+            </div>
+            <div class="col-md-4">
+                <h4>maggiori informazioni</h4>
+
+                <div class="row">
+                    div.
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+</section>
+
+
+<div class="bg-footer">
+    <footer>
+        <div class="container" id="contactsFooter">
+            <div class="row row-contact-title">
+                <div class="col-md-4">
+                    <p class='titleNav title-nav-contact'>CONTATTI</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer-address">
+                <div class="col-md-4">
+                    <p>Banca del cersio SA</p>
+                </div>
+                <div class="col-md-8 footer-address-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Via Pretorio 13</p>
+                            <p>CH-6901 Lugano</p>
+                            <p> Svizzera</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Telefono: +41 (0)91 923 84 22</p>
+                            <p>Telefax: +41 (0)91 923 55 08</p>
+                            <p>Email: <a href="mailto:mail@ceresiobank.com">mail@ceresiobank.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer-address">
+                <div class="col-md-4">
+                    <p>Ceresio SIM SpA</p>
+                </div>
+                <div class="col-md-8 footer-address-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Via Tamburini, 13</p>
+                            <p>20123 Milano (MI)</p>
+                            <p>Italia</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Telefono: +39 02 3037 7351</p>
+                            <p>Telefax: +39 02 3037 7248</p>
+                            <p>Email: <a href="mailto:info@ceresiosim.it">info@ceresiosim.it</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer-address">
+                <div class="col-md-4">
+                    <p>Belgrave Capital Management Ltd.</p>
+                </div>
+                <div class="col-md-8 footer-address-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>21 Palmer Street</p>
+                            <p>London SW1H 0AD</p>
+                            <p>United Kingdom</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Tel.: +44 (0) 20 7340 4700</p>
+                            <p>Fax.: +44 (0) 20 7340 4701</p>
+                            <p>Email: <a href="mailto:info@belgrave.com">info@belgrave.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer-address">
+                <div class="col-md-4">
+                    <p>Global Selection SGR SpA</p>
+                </div>
+                <div class="col-md-8 footer-address-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Via Tamburini, 13</p>
+                            <p>20123 Milano (MI)</p>
+                            <p>Italia</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Tel.: +39 02 3037 7301</p>
+                            <p>Fax.: +39 02 3037 7349</p>
+                            <p>Email: <a href="mailto:info@globalselectionsgr.it">info@globalselectionsgr.it</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer-address">
+                <div class="col-md-4">
+                    <p>Eurofinleading Fiduciaria S.p.A.</p>
+                </div>
+                <div class="col-md-8 footer-address-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Via Tamburini, 13</p>
+                            <p>20123 Milano (MI)</p>
+                            <p>Italia</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Tel.: +39 02 3037 7201</p>
+                            <p>Fax.: +39 02 3037 7248</p>
+                            <p>Email: <a href="mailto:info@eurofinleading.it">info@eurofinleading.it</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="container" id="footer-nav">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="logo-footer"><span class="icon-ceresio-mark"></span></div>
+                    <div id="logo-footer-content">
+                        <h3>CHI SIAMO</h3>
+                        <a href="#"> Il Gruppo</a><br>
+                        <a href="#">100 anni di storia</a><br>
+                        <a href="#">Valori e filosofia d'investimento</a><br>
+                        <a href="#">Fondazione</a><br></div>
+                </div>
+                <div class="col-md-3">
+                    <h3>SOCIET&#192;</h3>
+                    <a href="#"> Banca del Ceresio SA</a><br>
+                    <a href="#">Ceresio SIM SpA</a><br>
+                    <a href="#">Global Selection SGR SpA</a><br>
+                    <a href="#">Eurofinleading Fiduciaria</a><br>
+                    <a href="#">Belgrave Capital Management</a><br>
+                </div>
+                <div class="col-md-3">
+                    <h3>ATTIVIT&#192;</h3>
+                    <a href="#"> Wealth Management</a><br>
+                    <a href="#"> Asset Management</a><br>
+                    <a href="#"> Corporate Advisory</a><br>
+                </div>
+                <div class="col-md-2">
+                    <div class="col-last">
+                        <h3>SPUNTI DI RIFLESSIONE</h3>
+                        <a href="#">Ricerca</a><br>
+                        <a href="#">Dicono di noi</a><br>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 50px;">
+        </div>
+
+
+        <div class="container footer-copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &#169; 2019 Banca del Ceresio Group. All rights reserved
+                    </p>
+                </div>
+                <div id="footerLinks" class="col-md-6">
+                    <p><a href="#">Avvertenze legali</a> | <a href="#">Privacy</a> | <a href="#">Crediti</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/masonry.pkgd.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/homeFunctions.js"></script>
+</body>
+</html>
