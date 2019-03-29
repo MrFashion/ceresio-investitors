@@ -3,19 +3,16 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-
-
   @media only screen and (max-width: 768px) {
     padding-top: 0px;
     padding-bottom: 30px;
   }
 
-  &.bg-routing{
+  &.bg-routing {
     padding-bottom: 5px;
   }
 
   &.prefooter {
-    padding-bottom: 80px;
 
     @media only screen and (max-width: 768px) {
       padding-bottom: 10px;
@@ -28,19 +25,27 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  &.bg-white{
-    background-color: #ffffff;
-    padding-bottom: 60px;
-  }
-
-  &.bg-light-grey{
-    background-color: $light_grey_color;
-    padding-bottom: 60px;
-  }
-
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     padding-top: 0px;
     padding-bottom: 15px;
+  }
+
+  &.bg-white {
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &.bg-light-grey {
+    background-color: $light_grey_color;
+    padding-bottom: 60px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 0px;
+      padding-bottom: 15px;
+    }
   }
 
   &.prefooter {
@@ -51,11 +56,10 @@
     }
   }
 
-  hr{
-    border-color: rgba(29,55,86,0.5);
+  hr {
+    border-color: rgba(29, 55, 86, 0.3);
   }
 }
-
 
 .bg-custom-light-top {
   background-color: $light_color;
@@ -86,4 +90,21 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: transparent;
+}
+
+#sc-bank {
+
+  background-color: $light_grey_color !important;
+
+  .bg-white {
+    @media only screen and (max-width: 767px) {
+      background-color: $light_grey_color !important;
+    }
+  }
+
+  .bg-grey {
+    @media only screen and (max-width: 767px) {
+      background-color: #ffffff !important;
+    }
+  }
 }

@@ -142,3 +142,4 @@ function slickSliderManager() {
         return false;
     });
 }
+
