@@ -7,12 +7,15 @@ h4.stat-title {
   font-size: 12px !important;
 
   @media screen and (max-width: 767px) {
-    font-size: 15px !important;
+    margin-bottom: 5px !important;
   }
 }
 
 .stat-text {
   font-size: 16px !important;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 5px;
+  }
 }
 
 .stat-title {
@@ -42,7 +45,7 @@ h4.stat-title {
     letter-spacing: 1px;
     font-size: 15px;
     @media screen and (max-width: 767px) {
-      font-size: 15px;
+      font-size: 12px;
       margin-bottom: 20px;
     }
   }
@@ -50,11 +53,19 @@ h4.stat-title {
 
 .standard-page-content {
 
+  h1 {
+    @media screen and (max-width: 767px) {
+
+      font-size: 30px;
+    }
+  }
+
   p {
     font-size: 20px;
     line-height: 30px;
     @media screen and (max-width: 767px) {
       line-height: 25px;
+      font-size: 16px;
     }
   }
 
@@ -77,6 +88,10 @@ h4.stat-title {
       text-transform: none;
       font-size: 20px;
       font-weight: 500;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -85,12 +100,14 @@ h4.stat-title {
 
       .col-8 {
         @media screen and (max-width: 767px) {
-          line-height: 22px;
-          font-size: 16px;
+          line-height: 18px;
+          font-size: 12px;
+          letter-spacing: 0.5px;
         }
         .icon-arrow-right {
           @media screen and (max-width: 767px) {
             display: none;
+
           }
         }
       }
@@ -117,21 +134,23 @@ h4.stat-title {
       margin-bottom: 20px;
 
       @media screen and (max-width: 767px) {
-        margin-top: 12px;
-        margin-bottom: 15px;
+
+        margin-top: 8px;
+        margin-bottom: 13px;
       }
 
       .col-9 {
         line-height: 10px;
         @media screen and (max-width: 990px) {
           line-height: 25px;
-          font-size: 16px;
+          font-size: 15px;
         }
       }
     }
 
     .icon-arrow-right-rounded {
       float: right;
+      font-weight: 600;
 
       &.single-line {
         @media screen and (max-width: 767px) {
@@ -144,7 +163,14 @@ h4.stat-title {
       }
 
       @media screen and (max-width: 767px) {
+        font-size: 15px !important;
         margin-top: 20px;
+      }
+
+      &:before{
+        @media screen and (max-width: 767px) {
+          padding: 8px;
+        }
       }
     }
 
@@ -190,6 +216,18 @@ h4.stat-title {
           border: 1px solid $primary_color;
           border-radius: 50%;
 
+          @media screen and (max-width: 767px) {
+            width: 30px;
+            height: 30px;
+          }
+
+        }
+
+        @media screen and (max-width: 767px) {
+          line-height: 12px;
+          padding: 8px;
+          width: 30px;
+          height: 30px;
         }
 
       }
@@ -197,7 +235,7 @@ h4.stat-title {
       h4 {
         font-size: 12px;
         @media screen and (max-width: 767px) {
-          font-size: 15px;
+          font-size: 12px;
           line-height: 10px;
         }
       }
@@ -208,8 +246,7 @@ h4.stat-title {
         padding-bottom: 15px;
 
         @media screen and (max-width: 767px) {
-
-          margin-bottom: 0px;
+          padding-bottom: 0px;
           margin-top: 10px;
           margin-left: 15px;
         }
@@ -233,7 +270,7 @@ h4.stat-title {
 
     .col-md-3 {
       @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
     }
 
@@ -245,7 +282,8 @@ h4.stat-title {
 
         @media screen and (max-width: 767px) {
           margin-bottom: 0px;
-          font-size: 14px;
+          font-size: 14px !important;
+          line-height: 20px;
         }
       }
 
@@ -257,6 +295,23 @@ h4.stat-title {
 }
 
 .routing-standard-page {
+
+  hr {
+    border-color: rgba(29, 55, 86, .3) !important;
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  h4 {
+    a {
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+
+  }
 
   margin-top: 15px;
   .show-on-mobile {
@@ -273,14 +328,24 @@ h4.stat-title {
 
     .btn-login {
 
+      display: inline-block;
+
       border: 1px solid $primary_color;
       margin-left: 40px;
       text-transform: uppercase;
       font-size: 13px !important;
       padding: 9px 15px 6px 6px;
 
+      @media screen and (max-width: 768px) {
+        margin-top: 15px;
+        margin-left:0px;
+      }
+
       @media screen and (max-width: 767px) {
+        margin-top: 0px;
+        font-size: 14px;
         margin-left: 0px;
+        padding: 6px 15px 6px 6px;
       }
 
       &:hover {
@@ -311,6 +376,10 @@ h4.stat-title {
     font-weight: 400;
     color: $primary_color;
     font-size: 30px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
 }
@@ -325,6 +394,13 @@ h4.stat-title {
       margin-top: 30px;
       @media screen and (max-width: 767px) {
         margin-top: 20px;
+      }
+    }
+
+    .col-md-3 {
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+        margin-bottom: 0px;
       }
     }
   }

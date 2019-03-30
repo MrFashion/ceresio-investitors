@@ -10,12 +10,15 @@
       margin-top: 20px;
       float: right;
       font-size: 18px;
-
+      font-weight: 600;
       @media screen and (max-width: 767px) {
-        margin-top: 22px;
+        margin-top: 15px;
+        font-size: 14px ;
+
       }
 
       &:before, &:before {
+        padding: 8px;
       }
     }
 
@@ -28,6 +31,10 @@
       font-size: 20px;
       text-transform: none;
       font-weight: 600;
+      @media screen and (max-width: 767px) {
+       font-size: 16px;
+        margin-bottom: 0px;
+      }
     }
 
     h4 {
@@ -38,6 +45,8 @@
 
       @media screen and (max-width: 767px) {
         margin-bottom: 12px;
+        font-size: 16px;
+
       }
     }
 
