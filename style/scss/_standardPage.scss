@@ -35,6 +35,90 @@ h4.stat-title {
 .standard-page-wrapper {
   margin-top: 20px;
 
+  h6 {
+
+    text-transform: none;
+    color: $dark_color;
+    font-weight: 600;
+
+  }
+
+  .section-download {
+
+    .row{
+      &.link-download:hover{
+        color: $secondary_color
+      }
+    }
+
+    h4 {
+      padding-right: 15px;
+      margin-left: auto;
+
+      @media only screen and (max-width: 767px) {
+        margin-left: 15px;
+      }
+
+    }
+
+    .icon-download {
+      font-size: 30px;
+      padding-top: 2px;
+      float: right;
+      font-weight: 600;
+      @media only screen and (max-width: 767px) {
+        float: none;
+      }
+
+    }
+
+    .col-logo {
+      width: 60%;
+      padding-top: 2px;
+      padding-right: 0px;
+      float: right;
+
+      @media only screen and (max-width: 767px) {
+        margin-top: 6px;
+        float: left;
+        width: 10%;
+      }
+      @media only screen and (min-width: 767px) and (max-width: 990px) {
+        width: 35%;
+      }
+    }
+
+    .col-link {
+      float: right;
+      width: 40%;
+      padding-top: 0px;
+      padding-left: 0px;
+
+      @media only screen and (max-width: 767px) {
+        float: left;
+        width: 70%;
+      }
+
+      @media only screen and (min-width: 767px) and (max-width: 990px) {
+        width: 65%;
+      }
+
+    }
+
+    a {
+      float: right;
+      line-height: 20px;
+      text-transform: none;
+      font-size: 14px;
+      font-weight: 500;
+
+      @media only screen and (max-width: 767px) {
+        float: none;
+      }
+
+    }
+  }
+
   .title-section {
     @media only screen and (max-width: 767px) {
       margin-bottom: 15px;
@@ -167,7 +251,7 @@ h4.stat-title {
         margin-top: 20px;
       }
 
-      &:before{
+      &:before {
         @media screen and (max-width: 767px) {
           padding: 8px;
         }
@@ -338,7 +422,7 @@ h4.stat-title {
 
       @media screen and (max-width: 768px) {
         margin-top: 15px;
-        margin-left:0px;
+        margin-left: 0px;
       }
 
       @media screen and (max-width: 767px) {

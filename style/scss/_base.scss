@@ -129,8 +129,10 @@ hr {
 
 }
 
+
+
 //desktop show
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .show-on-mobile {
     display: none;
   }
@@ -201,7 +203,7 @@ a.slider-nav:hover {
 
 
 .mt-5 {
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 
 .mt-20 {
@@ -245,6 +247,10 @@ img {
 .pb-20-mobile {
   @media only screen and (max-width: 767px) {
     padding-bottom: 20px;
+  }
+}.pb-15-mobile {
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 15px;
   }
 }
 
