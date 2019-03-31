@@ -1,0 +1,39 @@
+.post-wrapper{
+  hr{
+    border-color: $primary_color !important;
+  }
+
+  h4{
+    font-size: 14px;
+  }
+
+
+  .post{
+
+
+    .post-link{
+      text-transform: none;
+      font-weight: 600;
+
+    }
+
+    .post-content{
+      line-height: 18px;
+      color: #4a4a4a;
+      font-family: "Sofia Pro",sans-serif;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      text-transform: none;
+      font-size: 13px;
+    }
+
+      .post-data{
+
+        color: #a1a1a1;
+        font-size: 14px;
+
+      }
+
+  }
+
+}
