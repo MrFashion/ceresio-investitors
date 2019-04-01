@@ -36,7 +36,6 @@ h4.stat-title {
   margin-top: 20px;
 
   h6 {
-
     text-transform: none;
     color: $dark_color;
     font-weight: 600;
@@ -45,8 +44,8 @@ h4.stat-title {
 
   .section-download {
 
-    .row{
-      &.link-download:hover{
+    .row {
+      &.link-download:hover {
         color: $secondary_color
       }
     }
@@ -73,10 +72,9 @@ h4.stat-title {
     }
 
     .col-logo {
-      width: 60%;
-      padding-top: 2px;
+      width: 49%;
+      padding-top: 5px;
       padding-right: 0px;
-      float: right;
 
       @media only screen and (max-width: 767px) {
         margin-top: 6px;
@@ -84,23 +82,23 @@ h4.stat-title {
         width: 10%;
       }
       @media only screen and (min-width: 767px) and (max-width: 990px) {
-        width: 35%;
+        width: 15%;
       }
     }
 
     .col-link {
       float: right;
-      width: 40%;
       padding-top: 0px;
       padding-left: 0px;
 
       @media only screen and (max-width: 767px) {
+        margin-left: 15px;
         float: left;
         width: 70%;
       }
 
       @media only screen and (min-width: 767px) and (max-width: 990px) {
-        width: 65%;
+        width: 80%;
       }
 
     }
@@ -511,6 +509,20 @@ h4.stat-title {
           margin-top: 5px;
         }
       }
+    }
+  }
+}
+
+#sc-SAI {
+  .standard-page-wrapper {
+    p {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .more {
+      font-size: 18px;
     }
   }
 }
