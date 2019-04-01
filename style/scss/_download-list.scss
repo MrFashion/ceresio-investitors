@@ -1,0 +1,43 @@
+.download-list {
+
+  .download-list-date {
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: $dark_color;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      margin-bottom: 0px !important;
+    }
+    span{
+      font-size: 12px;
+
+    }
+  }
+  .download-list-title {
+    text-transform: none;
+    font-size: 18px ;
+    font-weight: 600;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px ;
+      margin-top: 0px !important;
+    }
+    .download-list-sub-title{
+      color: $dark_color;
+      font-weight: 400;
+    }
+  }
+  .download-list-icon{
+    margin-top: 12px;
+
+    .icon-download{
+      margin-right: 15px;
+      font-weight: 600;
+      float: right;
+      font-size: 30px;
+    }
+  }
+
+
+}

@@ -129,8 +129,6 @@ hr {
 
 }
 
-
-
 //desktop show
 @media only screen and (min-width: 767px) {
   .show-on-mobile {
@@ -165,6 +163,27 @@ a.slider-nav:hover {
   }
 }
 
+.btn-link {
+  color: $primary_color;
+  border: 1px solid $primary_color;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  padding: 5px 18px 5px 18px;
+  transition: .2s ease-in-out;
+
+  @media only screen and (max-width: 767px) {
+ margin: auto;
+
+  }
+
+  &:hover, &:focus {
+    color: $secondary_color;
+    border-color: $secondary_color;
+    text-decoration: none;
+  }
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -173,6 +192,17 @@ a.slider-nav:hover {
   padding-bottom: 20px;
 }
 
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
 .pb-40 {
   padding-bottom: 40px;
 }
@@ -197,27 +227,45 @@ a.slider-nav:hover {
   margin-top: 10px;
 }
 
+.mt-45 {
+  margin-top: 45px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
 
+.mt-55 {
+  margin-top: 55px;
+}
 
 .mt-5 {
   margin-top: 5px !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
 }
 
 .mt-20 {
   margin-top: 20px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-10 {
   margin-bottom: 10px;
 }
-
 
 .mb-40 {
   margin-bottom: 40px;
@@ -232,9 +280,21 @@ img {
   height: auto;
 }
 
+.mt-43{
+  margin-top: 43px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
 .pt-30-mobile {
   @media only screen and (max-width: 767px) {
     padding-top: 30px;
+  }
+}.pt-20-mobile {
+  @media only screen and (max-width: 767px) {
+    padding-top: 20px;
   }
 }
 
@@ -248,7 +308,9 @@ img {
   @media only screen and (max-width: 767px) {
     padding-bottom: 20px;
   }
-}.pb-15-mobile {
+}
+
+.pb-15-mobile {
   @media only screen and (max-width: 767px) {
     padding-bottom: 15px;
   }

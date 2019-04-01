@@ -1,39 +1,67 @@
-.post-wrapper{
-  hr{
+.post-wrapper {
+  hr {
     border-color: $primary_color !important;
   }
 
-  h4{
+  h4 {
     font-size: 14px;
+    @media screen and (max-width: 767px) {
+      font-size: 14px !important;
+    }
   }
 
+  .post {
 
-  .post{
-
-
-    .post-link{
+    .post-link {
       text-transform: none;
       font-weight: 600;
-
+      font-size: 20px;
+      margin-bottom: 5px;
+      @media screen and (max-width: 767px) {
+        font-size: 20px !important;
+      }
     }
 
-    .post-content{
-      line-height: 18px;
+    .post-content {
+      line-height: 20px;
       color: #4a4a4a;
-      font-family: "Sofia Pro",sans-serif;
+      font-family: "Sofia Pro", sans-serif;
       font-style: normal;
       -webkit-font-smoothing: antialiased;
       text-transform: none;
-      font-size: 13px;
-    }
+      letter-spacing: 0.5px;
+      font-size: 14px !important;
 
-      .post-data{
-
-        color: #a1a1a1;
-        font-size: 14px;
-
+      @media screen and (max-width: 767px) {
+        font-size: 14px !important;
       }
+
+    }
 
   }
 
+  .post-details {
+    p {
+      &.post-details-rounting {
+        text-transform: uppercase !important;
+        font-size: 12px;
+      }
+
+      &.post-details-content {
+        font-size: 20px !important;
+      }
+    }
+
+    h4.post-details-title {
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: none;
+    }
+  }
+}
+
+.post-data {
+  text-transform: uppercase;
+  color: #a1a1a1;
+  font-size: 12px;
 }

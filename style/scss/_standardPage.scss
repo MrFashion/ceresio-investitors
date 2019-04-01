@@ -61,6 +61,7 @@ h4.stat-title {
     }
 
     .icon-download {
+
       font-size: 30px;
       padding-top: 2px;
       float: right;
@@ -77,12 +78,16 @@ h4.stat-title {
       padding-right: 0px;
 
       @media only screen and (max-width: 767px) {
-        margin-top: 6px;
+        margin-top: 1px;
         float: left;
         width: 10%;
       }
       @media only screen and (min-width: 767px) and (max-width: 990px) {
         width: 15%;
+      }
+
+      .icon-download {
+        color: $primary_color;
       }
     }
 
@@ -95,6 +100,7 @@ h4.stat-title {
         margin-left: 15px;
         float: left;
         width: 70%;
+        line-height: 20px;
       }
 
       @media only screen and (min-width: 767px) and (max-width: 990px) {
@@ -462,6 +468,14 @@ h4.stat-title {
     @media screen and (max-width: 767px) {
       font-size: 20px;
     }
+
+    &.title-lg {
+      font-size: 50px !important;
+      font-weight: 800;
+      @media screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+    }
   }
 
 }
@@ -514,19 +528,100 @@ h4.stat-title {
 }
 
 #sc-SAI {
+
+
   .standard-page-wrapper {
+
+
+
     p {
       font-size: 20px;
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
     }
     h6 {
       font-size: 20px;
+      @media screen and (max-width: 767px) {
+        font-size: 16px !important;
+      }
     }
     .more {
       font-size: 18px;
+      .icon-arrow-right {
+        font-size: 16px;
+        margin-left: 10px;
+      }
     }
   }
 }
 
+#long-term {
+
+  p {
+    font-size: 20px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+
+  .post-data {
+    font-size: 14px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px !important;
+    }
+  }
+}
+
+#spunti-riflessioni {
+  .bg-custom-light {
+    @media screen and (max-width: 767px) {
+      padding-bottom: 10px;
+    }
+  }
+  .claim {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .post-details-title {
+    @media screen and (max-width: 767px) {
+      font-size: 18px !important;
+    }
+
+  }
+  .post-details-content {
+    @media screen and (max-width: 767px) {
+      font-size: 16px !important;
+    }
+  }
+
+  .post-data{
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0px !important;
+    }
+  }
+
+  .standard-page-wrapper{
+    margin-top: 0px;
+  }
+
+  .title-section{
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0px !important;
+    }
+  }
+
+}
+
+.post-routing-link {
+  margin-bottom: 0px;
+  font-size: 12px !important;
+  color: $dark_color
+}
 
 
 
